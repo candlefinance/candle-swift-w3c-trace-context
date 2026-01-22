@@ -15,7 +15,7 @@ let package = Package(
         .target(
             name: "CandleW3CTraceContext",
             dependencies: [
-                .product(name: "CandleOrderedCollections", package: "swift-collections"),
+                .product(name: "CandleOrderedCollections",package: "candle-swift-collections"),
             ],
             swiftSettings: swiftSettings
         ),
