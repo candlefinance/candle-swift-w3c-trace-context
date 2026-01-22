@@ -6,22 +6,22 @@ let swiftSettings: [SwiftSetting] = [.enableExperimentalFeature("StrictConcurren
 let package = Package(
     name: "swift-w3c-trace-context",
     products: [
-        .library(name: "W3CTraceContext", targets: ["W3CTraceContext"]),
+        .library(name: "CandleW3CTraceContext", targets: ["CandleW3CTraceContext"]),
     ],
     dependencies: [
         .package(url: "https://github.com/candlefinance/swift-collections.git", branch: "fix-candle-1.1.4"),
     ],
     targets: [
         .target(
-            name: "W3CTraceContext",
+            name: "CandleW3CTraceContext",
             dependencies: [
-                .product(name: "OrderedCollections", package: "swift-collections"),
+                .product(name: "CandleOrderedCollections", package: "swift-collections"),
             ],
             swiftSettings: swiftSettings
         ),
         .testTarget(
             name: "W3CTraceContextTests",
-            dependencies: [.target(name: "W3CTraceContext")],
+            dependencies: [.target(name: "CandleW3CTraceContext")],
             swiftSettings: swiftSettings
         ),
     ],

@@ -12,7 +12,7 @@
 //
 //===----------------------------------------------------------------------===//
 
-import OrderedCollections
+import CandleOrderedCollections
 
 /// Vendor-specific string values to be propagated alongside a distributed tracing span.
 ///
