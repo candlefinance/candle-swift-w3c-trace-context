@@ -9,7 +9,7 @@ let package = Package(
         .library(name: "CandleW3CTraceContext", targets: ["CandleW3CTraceContext"]),
     ],
     dependencies: [
-        .package(name: "candle-swift-collections", url: "https://github.com/candlefinance/candle-swift-collections.git", branch: "fix-candle-1.1.4"),
+        .package(url: "https://github.com/candlefinance/candle-swift-collections.git", branch: "fix-candle-1.1.4"),
     ],
     targets: [
         .target(
