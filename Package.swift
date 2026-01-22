@@ -4,7 +4,7 @@ import PackageDescription
 let swiftSettings: [SwiftSetting] = [.enableExperimentalFeature("StrictConcurrency=complete")]
 
 let package = Package(
-    name: "candle-swift-w3c-trace-context",
+    name: "swift-w3c-trace-context",
     products: [
         .library(name: "CandleW3CTraceContext", targets: ["CandleW3CTraceContext"]),
     ],
@@ -15,7 +15,7 @@ let package = Package(
         .target(
             name: "CandleW3CTraceContext",
             dependencies: [
-                .product(name: "CandleOrderedCollections", package: "candle-swift-collections"),
+                .product(name: "CandleOrderedCollections", package: "swift-collections"),
             ],
             swiftSettings: swiftSettings
         ),
