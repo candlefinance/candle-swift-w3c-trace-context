@@ -4,7 +4,7 @@ import PackageDescription
 let swiftSettings: [SwiftSetting] = [.enableExperimentalFeature("StrictConcurrency=complete")]
 
 let package = Package(
-    name: "swift-w3c-trace-context",
+    name: "candle-swift-w3c-trace-context",
     products: [
         .library(name: "CandleW3CTraceContext", targets: ["CandleW3CTraceContext"]),
     ],
