@@ -9,13 +9,13 @@ let package = Package(
         .library(name: "CandleW3CTraceContext", targets: ["CandleW3CTraceContext"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/candlefinance/swift-collections.git", branch: "fix-candle-1.1.4"),
+        .package(url: "https://github.com/candlefinance/swift-collections.git", name: "candle-swift-collections", branch: "fix-candle-1.1.4"),
     ],
     targets: [
         .target(
             name: "CandleW3CTraceContext",
             dependencies: [
-                .product(name: "CandleOrderedCollections", package: "swift-collections"),
+                .product(name: "CandleOrderedCollections", package: "candle-swift-collections"),
             ],
             swiftSettings: swiftSettings
         ),
